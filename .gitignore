@@ -39,3 +39,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+-e "node_modules/\n.next/\n.env\n.env.local\n.DS_Store" 
