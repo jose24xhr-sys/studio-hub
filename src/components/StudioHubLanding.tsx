@@ -117,18 +117,21 @@ import Link from "next/link";
   variants={fadeUp}
   initial="hidden"
   whileInView="show"
-  viewport={{ once: true, amount: 0.5 }}
+  viewport={{ once: true, amount: 0.2 }}
 >
-      <section className="relative overflow-hidden h-[950px] md:h-[1020px] lg:h-[600px]">
-        <Image
-    src="/brand/website.jpg"
-    alt="Fondo Studio Hub"
-    fill
-    priority
-    className="object-cover brightness-20" // 🔹 Ajusta la oscuridad aquí
-  />
-         <div className="absolute inset-0 bg-black/55 z-0" /> {/* oscurecido */}
+      <section className="relative overflow-hidden
+                      h-[70vh] md:h-[68vh] lg:h-[60vh]
+                      min-h-[520px] max-h-[800px]">
+    <Image
+      src="/brand/website.jpg"
+      alt="Fondo Studio Hub"
+      fill
+      priority
+      className="object-cover object-[50%_30%] md:object-center brightness-20"
+    />
+    <div className="absolute inset-0 bg-black/55 z-0" />
 
+    
   {/* Contenido */}
   <div className="relative z-20 mx-auto w-full max-w-7xl px-4 py-30">
     <div className="grid grid-cols-12 gap-8">
@@ -142,7 +145,7 @@ import Link from "next/link";
              CONFIANZA Y SERIEDAD<br/>
           PROYECTADAS EN <span className="bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent"><br/>TU IMAGEN DIGITAL</span>
         </h1>
-            <p className="mt-4 max-w-xl text-[22px] leading-relaxed pr-2  max-w-3xl" style={{color: "#817c7cff", fontWeight: 600}}>
+            <p className="mt-4 max-w-xl text-xl leading-relaxed pr-2  max-w-3xl" style={{color: "#817c7cff", fontWeight: 600}}>
                Tu sitio web no solo será tu carta de presentación< br /> Será la herramienta que impulse confianza a tus clientes y crecimiento en tu canal online
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -213,7 +216,7 @@ className="inline-flex items-center justify-center gap-2 rounded-lg border borde
   variants={fadeUp}
   initial="hidden"
   whileInView="show"
-  viewport={{ once: true, amount: 0.6 }}
+  viewport={{ once: true, amount: 0.2 }}
 >
 <section className="mx-auto max-w-7xl px-4 ">
   <div className="mt-8 rounded-2xl border border-emerald-600/70 bg-neutral-900/70 p-6 md:p-8 text-center shadow-lg hover:border-neutral-700">
@@ -232,7 +235,7 @@ className="inline-flex items-center justify-center gap-2 rounded-lg border borde
   variants={fadeUp}
   initial="hidden"
   whileInView="show"
-  viewport={{ once: true, amount: 0.6 }}
+  viewport={{ once: true, amount: 0.2 }}
 >
       <section id="Proceso" className="bg-neutral-950/60">
         <div className="mx-auto max-w-7xl px-4 py-20">
@@ -271,7 +274,7 @@ className="inline-flex items-center justify-center gap-2 rounded-lg border borde
   variants={fadeUp}
   initial="hidden"
   whileInView="show"
-  viewport={{ once: true, amount: 0.6 }}
+  viewport={{ once: true, amount: 0.2 }}
 >
       <section id="Costos" className="mx-auto max-w-7xl px-4 scroll-mt-24">
         <div className="mx-auto max-w-5xl text-center">
@@ -313,7 +316,7 @@ className="inline-flex items-center justify-center gap-2 rounded-lg border borde
   variants={fadeUp}
   initial="hidden"
   whileInView="show"
-  viewport={{ once: true, amount: 0.6 }}
+  viewport={{ once: true, amount: 0.2 }}
 >
 <section className="mx-auto max-w-7xl px-4 mt-10">
   <div className="rounded-2xl border border-emerald-600/70 bg-neutral-900/70 p-6 md:p-8 text-center shadow-lg hover:border-neutral-700">
@@ -372,7 +375,7 @@ className="inline-flex items-center justify-center gap-2 rounded-lg border borde
   variants={fadeUp}
   initial="hidden"
   whileInView="show"
-  viewport={{ once: true, amount: 0.6 }}
+  viewport={{ once: true, amount: 0.2 }}
 >
      <section id="Preguntas" className="bg-neutral-950/60">
   <div className="mx-auto max-w-7xl px-4 py-20">
@@ -402,7 +405,7 @@ className="inline-flex items-center justify-center gap-2 rounded-lg border borde
   variants={fadeUp}
   initial="hidden"
   whileInView="show"
-  viewport={{ once: true, amount: 0.6 }}
+  viewport={{ once: true, amount: 0.2}}
 >
       <footer id="contacto" className="border-t border-neutral-900">
         <div className="mx-auto max-w-7xl px-4 py-12">
