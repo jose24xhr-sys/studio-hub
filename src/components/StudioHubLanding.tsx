@@ -70,11 +70,6 @@ import Link from "next/link";
   },
 };
 
-const container: Variants = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.15 } },
-};
-
     export default function StudioHubLanding() {
 
 
@@ -124,7 +119,7 @@ const container: Variants = {
   whileInView="show"
   viewport={{ once: true, amount: 0.5 }}
 >
-      <section className="relative overflow-hidden h-[950px] md:h-[1020px] lg:h-[760px]">
+      <section className="relative overflow-hidden h-[950px] md:h-[1020px] lg:h-[600px]">
         <Image
     src="/brand/website.jpg"
     alt="Fondo Studio Hub"
@@ -195,7 +190,7 @@ className="inline-flex items-center justify-center gap-2 rounded-lg border borde
   whileInView="show"
   viewport={{ once: true, amount: 0.2 }}
 >
-      <section id="Diseño Web" className="mt-12 mx-auto max-w-7xl px-4 pb-10 scroll-mt-24">
+      <section id="Diseño Web" className="mt-10 mx-auto max-w-7xl px-4 pb-10 scroll-mt-24">
         <div className="mx-auto text-center w-full">
           <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold w-full px-4 sm:px-6 md:px-8">Nuestro enfoque para tu lanzamiento digital</h2>
           <p className="mt-8 text-neutral-300">Cuidamos el detalle para que tu web tenga un diseño profesional, genere confianza, credibilidad y crecimiento para tu negocio <br/> Porque una web no solo se crea, se lanza para impulsar tu negocio </p>
