@@ -10,7 +10,6 @@ import Link from "next/link";
 // Studio Hub Landing Page – single-file React component
 // TailwindCSS utility classes; minimal dependencies
 // Replace copy with your own brand voice.
-    export default function StudioHubLanding() {
 
   const features = [
     {
@@ -62,7 +61,7 @@ import Link from "next/link";
     },
   ];
 
-  const fadeUp: Variants = {
+ const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
   show: {
     opacity: 1,
@@ -71,11 +70,13 @@ import Link from "next/link";
   },
 };
 
-// (opcional) Para stagger en contenedores de cards/listas
 const container: Variants = {
   hidden: {},
   show: { transition: { staggerChildren: 0.15 } },
 };
+
+    export default function StudioHubLanding() {
+
 
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
@@ -142,8 +143,8 @@ const container: Variants = {
 
               TU ALIADO CREATIVO / DISEÑO WEB
             </p>
-            <h1 className="text-left text-4xl font-extrabold leading-tight tracking-tight md:text-5xl lg:max-w-4xl pr-2" sytle={{ color: "#121212"}}>
-              CONFIANZA Y SERIEDAD<br/>
+<h1 className="text-left text-4xl md:text-5xl lg:max-w-4xl pr-2 font-extrabold leading-tight tracking-tight text-neutral-100">
+             CONFIANZA Y SERIEDAD<br/>
           PROYECTADAS EN <span className="bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent"><br/>TU IMAGEN DIGITAL</span>
         </h1>
             <p className="mt-4 max-w-xl text-[22px] leading-relaxed pr-2  max-w-3xl" style={{color: "#817c7cff", fontWeight: 600}}>
