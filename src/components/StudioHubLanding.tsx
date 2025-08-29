@@ -2,7 +2,7 @@
 
 import {useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Check, Sparkles, Stars, Rocket, Globe, MessageSquare, Shield } from "lucide-react";
+import { ArrowRight, Check, Stars, Rocket, Globe, Shield } from "lucide-react";
 import Image from "next/image";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 import Link from "next/link";
@@ -11,19 +11,6 @@ import Link from "next/link";
 // Studio Hub Landing Page – single-file React component
 // TailwindCSS utility classes; minimal dependencies
 // Replace copy with your own brand voice.
-
-export default function StudioHubLanding() {
-  const [email, setEmail] = useState("");
-
-  const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
-
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.15 } },
-};
   
   const features = [
     {
@@ -435,4 +422,3 @@ className="inline-flex items-center justify-center gap-2 rounded-lg border borde
       </motion.section>
     </div>
   );
-}
