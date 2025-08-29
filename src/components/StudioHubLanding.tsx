@@ -37,7 +37,7 @@ import Link from "next/link";
   const plans = [
     {
       name: "Lanzamiento",
-      price: "$1,800",
+      price: "$2,500",
       tagline: "Ideal para Negocios Nuevos",
       bullets: ["Dominio propio desde el primer día", "Landing de 1–3 secciones","Visibilidad en Google","Métricas para seguir tu crecimiento"],
       cta: "Empezar",
@@ -45,7 +45,7 @@ import Link from "next/link";
     },
     {
       name: "Escala",
-      price: "$$",
+      price: "$3,500",
       tagline: "Negocios en Crecimiento",
       bullets: ["Dominio incluido, sin compromisos", "Sitio de 3–6 páginas", "Visibilidad en Google","Automatizaciones simples"],
       cta: "Agendar una Reunión",
@@ -53,7 +53,7 @@ import Link from "next/link";
     },
     {
       name: "Comercio Digital",
-      price: "$$$",
+      price: "7,000",
       tagline: "Tienda Online o Marketplace",
       bullets: ["Web a medida", "Pagos en línea integrados","Gestión de Usuarios & pedidos","Integraciones avanzadas"],
       cta: "Agenda una demo",
