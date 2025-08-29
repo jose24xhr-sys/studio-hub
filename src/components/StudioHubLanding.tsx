@@ -1,7 +1,6 @@
 "use client";
 
-import {useState } from "react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { ArrowRight, Check, Stars, Rocket, Globe, Shield } from "lucide-react";
 import Image from "next/image";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
@@ -11,7 +10,8 @@ import Link from "next/link";
 // Studio Hub Landing Page – single-file React component
 // TailwindCSS utility classes; minimal dependencies
 // Replace copy with your own brand voice.
-  
+    export default function StudioHubLanding() {
+
   const features = [
     {
       title: "Visibilidad Online",
@@ -61,6 +61,21 @@ import Link from "next/link";
       popular: false,
     },
   ];
+
+  const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+// (opcional) Para stagger en contenedores de cards/listas
+const container: Variants = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15 } },
+};
 
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
@@ -421,4 +436,4 @@ className="inline-flex items-center justify-center gap-2 rounded-lg border borde
       </footer>
       </motion.section>
     </div>
-  );
+  )}
